@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>WEB | Lab1 | Pashchenko</title>
+    <meta charset="UTF-8">
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <link href="../css/description.css" rel="stylesheet">
+    <link href="../css/graphic.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/tables.css" rel="stylesheet">
+    <link href="../css/codeflake.css" rel="stylesheet">
+</head>
+<body>
+<table>
+    <div id="codeFlakeContainer">
+        <span class="codeFlake"></span>
+    </div>
+    <div class="description">
+        by: Пащенко Олег Дмитриевич | group: P32141 | variant: 1412
+    </div>
+
+
+    <tr>
+        <td>
+            <table class="frontTables" id="result">
+                <thead>
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>R</th>
+                    <th>Results</th>
+                    <th>Script time</th>
+                    <th>Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </td>
+
+        <td>
+
+
+            <table class="frontTables" style="left: 5%">
+                <tr>
+                    <td align="center">
+                        <canvas class="canvas" id="canvas" width="300px" height="300px"></canvas>
+                    </td>
+                </tr>
+
+                <tr>
+                    <form align="center" id="form">
+                        <td>
+                            <table>
+
+                                <td>
+                                    <label>X</label>
+                                    <select required="" id="x" name="x">
+                                        <option value=""></option>
+                                        <option value="-3">-3</option>
+                                        <option value="-2">-2</option>
+                                        <option value="-1">-1</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label>Y</label>
+                                    <input style="width: 100px" type="number" required="" id="y" name="y" min="-3" max="5" step="0.1" placeholder="-3...5">
+                                </td>
+
+                                <td>
+                                    <label>R</label>
+                                    <input style="width: 100px;" type="number" required="" id="r" name="r" max="5" min="2" step="0.1" placeholder="2...5">
+                                </td>
+                            </table>
+
+                            <br/>
+                            <table id="bottoms" align="center">
+                                <tr>
+                                    <td>
+                                        <input type="submit" name="button" id="button" value="send">
+                                    </td>
+                                    <td>
+                                        <input type="reset" name="clear" id="clear" value="reset"
+                                               onclick="clear_table()">
+                                    </td>
+                                </tr>
+                            </table>
+                            <br/>
+                    </form>
+                </tr>
+            </table>
+        </td>
+
+
+    </tr>
+
+</table>
+
+</body>
+
+<script src="../js/codeFlake.js"></script>
+<script src="../js/communication.js"></script>
+<script src="../js/table.js"></script>
+<script src="../js/validator.js"></script>
+<script src="../js/graphic.js"></script>
+</html>
